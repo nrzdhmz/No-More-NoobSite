@@ -1,0 +1,115 @@
+.container{
+  .events{
+    .wrapper{
+      position: relative;
+      i{
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        font-size: 1.25rem;
+        position: absolute;
+        text-align: center;
+        line-height: 50px;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+        &:active{
+          transform: translateY(-50%) scale(0.85);
+        }
+        &:first-child{
+          left: -22px;
+          z-index: 999;
+        }
+        &:last-child{
+          right: -22px;
+        }
+      }
+      .carousel{
+        display: grid;
+        grid-auto-flow: column;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 30px;
+        border-radius: 4px;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        grid-auto-columns: 100%;
+        @media (min-width: 767px){
+          grid-auto-columns: calc((100% / 2));
+        }   
+        @media (min-width: 991px){
+          grid-auto-columns: calc((100% / 3) - 22px);
+        }   
+        .card{
+          scroll-snap-align: start;
+          margin-bottom: 30px !important;
+          background: #fff;
+          cursor: pointer;
+          flex-direction: column;
+          .swiperImg{
+            border-radius: 5px 5px 0px 0px;
+            img{
+              width: 100%;
+              background-size: cover;
+              transform: scale(1);
+            }
+          }
+          .swiperContent{
+            border-radius: 0px 0px 5px 5px;
+            padding: 30px 20px 30px 23px;
+            box-shadow: 0 10px 15px rgba(0,9,94,0.06);
+            transition: all .3s ease-out 0s;
+            .swiperTop{
+              display: flex;
+              justify-content: space-between;
+              h3{
+                font-family: "Josefin Sans",sans-serif;
+                color: #00095E;
+                margin-top: 0px;
+                font-style: normal;
+                font-weight: 500;
+                a{
+                  color: #00095E;
+                  font-family: "Josefin Sans",sans-serif;
+                  font-size: 22px;
+                  font-weight: 700;
+                  margin-bottom: 10px;
+                  display: block;
+                }
+              }
+              .price{
+                font-size: 22px;
+                font-weight: 700;
+                color: #7EA0FF;
+                line-height: 1;
+              }
+            }
+            p{
+              color: #00095E;
+              font-size: 14px;
+              font-weight: 500;
+              margin: 0;
+              padding: 0;
+              line-height: 1.4;
+              a{
+                color: #7EA0FF;
+                background: rgba(126,160,255,0.05);
+                font-size: 14px;
+                display: inline-block;
+                font-weight: 500;
+                line-height: 1;
+                margin: 0;
+                padding: 9px 15px;
+                border-radius: 19px;
+                margin-right: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  } 
+}

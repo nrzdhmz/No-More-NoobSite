@@ -1,0 +1,118 @@
+.faq{
+  padding-top: 120px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .faqTop{
+      text-align: center;
+      span{
+        color: #7EA0FF;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        display: inline-block;
+        letter-spacing: 0.05em;
+      }
+      h2{
+        font-size: 24px;
+        display: block;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 22px;
+        color: #00095E;
+        @media (min-width: 575px){
+          font-size: 31px;
+        }  
+        @media (min-width: 767px){
+          font-size: 43px;
+        }  
+        @media (min-width: 991px){
+          font-size: 41px;
+        }  
+        @media (min-width: 1200px){
+          font-size: 50px;
+        }
+      }
+    }
+    .faqBottom{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .faqBg{
+        width: 100%;
+        padding-top: 50px;
+        @media (min-width: 768px){
+          width: calc(10 / 12 * 100%); 
+        }
+        @media (min-width: 992px){
+          width: calc(6 / 12 * 100%);
+        }
+        @media (min-width: 1200px){
+          width: calc(6 / 12 * 100%);
+        }
+        img{
+          width: 100%;
+        }
+      }
+      .collapses{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media (min-width: 768px){
+          width: calc(10 / 12 * 100%);
+        }
+        @media (min-width: 992px){
+          width: calc(6 / 12 * 100%);
+        }
+        @media (min-width: 1200px){
+          width: calc(5 / 12 * 100%);
+        }
+        .collapsible {
+          background-color: transparent;
+          color: #010A44;
+          font-size: 16px;
+          padding: 20px 15px 20px 41px;
+          display: block;
+          text-decoration: none;
+          border-bottom: 1px solid #EFEFEF !important;
+          font-size: 18px;
+          cursor: pointer;
+          position: relative;
+          .plus{
+            position: absolute;
+            width: 10px;
+            top: 28px;
+            left: 15px;
+          }
+          .icon{
+            position: absolute;
+            width: 10px;
+            top: 28px;
+            left: 15px;
+          }
+        }  
+        .content {
+          display: none;
+          overflow: hidden;
+          padding: 20px 15px 20px 41px;
+          transition: max-height 0.5s ease;
+        }
+      }
+    }
+    .faqBtn{
+      display: flex;
+      margin-top: 40px;
+      justify-content: center;
+    }
+  }
+}
+
+.collapsible.hideAfter::after {
+  display: none;
+}
