@@ -1,0 +1,34 @@
+.container{
+  display: flex;
+  justify-content: center;
+  .events{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    .eventsTitle{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 45px;
+      span{
+        color: #7EA0FF;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        display: inline-block;
+        letter-spacing: 0.05em;
+      }
+      h2{
+        font-size: 50px;
+        display: block;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 22px;
+        color: #00095E;
+      }
+    }
+  }
+}

@@ -1,55 +1,33 @@
+@import 'globals';
+@import 'header';
+@import 'hero';
+@import 'swiperTop';
+@import 'footer';
+@import 'video';
+@import 'bottom';
+@import 'eventsTop';
+@import 'swiper';
+
 .container{
   .events{
-    .wrapper{
+    .container{
       position: relative;
-      i{
-        top: 50%;
-        height: 50px;
-        width: 50px;
-        cursor: pointer;
-        font-size: 1.25rem;
-        position: absolute;
-        text-align: center;
-        line-height: 50px;
-        background: #fafafa;
-        border-radius: 50%;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-        transform: translateY(-50%);
-        transition: transform 0.1s linear;
-        &:active{
-          transform: translateY(-50%) scale(0.85);
-        }
-        &:first-child{
-          left: -55px;
-          z-index: 999;
-        }
-        &:last-child{
-          right: -55px; 
-          z-index: 999;
-        }
-      }
       .carousel{
-        display: grid;
-        grid-auto-flow: column;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: 30px;
-        border-radius: 4px;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-        grid-auto-columns: 100%;
-        @media (min-width: 767px){
-          grid-auto-columns: calc((100% / 2));
-        }   
-        @media (min-width: 991px){
-          grid-auto-columns: calc((100% / 3) - 20px);
-        }   
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
         .card{
-          scroll-snap-align: start;
-          margin-bottom: 30px !important;
-          background: #fff;
-          cursor: pointer;
+          width: 100%;
           flex-direction: column;
+          padding: 0 15px;
+          margin-bottom: 30px !important;
+          @media (min-width: 767px){
+            width: calc((100% / 2));
+          }   
+          @media (min-width: 992px){
+            width: calc((100% / 3));
+          } 
           .swiperImg{
             border-radius: 5px 5px 0px 0px;
             overflow: hidden;
@@ -120,3 +98,5 @@
     }
   } 
 }
+
+

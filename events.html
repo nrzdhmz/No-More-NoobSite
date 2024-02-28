@@ -1,72 +1,277 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-</style>
-</head>
-<body>
-
-<h2>Collapsibles</h2>
-
-<p>A Collapsible:</p>
-<button type="button" class="collapsible">Open Collapsible</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<p>Collapsible Set:</p>
-<button type="button" class="collapsible">Open Section 1</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button type="button" class="collapsible">Open Section 2</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button type="button" class="collapsible">Open Section 3</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/scss/events.css">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="mfp-bg"></div>
+    <header>
+      <div class="headerContainer">
+        <div class="logoContainer">
+          <img src="./assets/img/logo.png" alt="logo" />
+        </div>
+        <nav class="padding">
+          <ul class="navigation">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./blog.html">Blog</a>
+              <ul class="dropdown">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Event Details</a></li>
+                <li><a href="#">Blog Details</a></li>
+                <li><a href="#">Element</a></li>
+              </ul>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li class="buttonHeader">
+              <a href="#" class="headerBtn"
+                ><img
+                  src="./assets/svg/phone.svg"
+                  alt=""
+                />+10 (67) 678 2567</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="eventsTop">
+      <div class="container">
+        <h2>All Events</h2>
+      </div>
+    </section> 
+    <section class="hero">
+      <div class="container">
+        <div class="events">
+          <div class="eventsTitle">
+            <span>Check our best promotional tour</span>
+            <h2>Upcoming Events</h2>
+          </div>
+          <div class="container">
+            <ul class="carousel">
+              <li class="card">
+                <div class="swiperImg">
+                  <img src="./assets/img/services1.jpg" alt="service" />
+                </div>
+                <div class="swiperContent">
+                  <div class="swiperTop">
+                    <h3>
+                      <a href="./events.html">Mega Turkey</a>
+                    </h3>
+                    <span class="price">$1200</span>
+                  </div>
+                  <p>
+                    <a href="#">12 Jan - 18 Jan</a>
+                    5 Days
+                  </p>
+                </div>
+              </li>
+              <li class="card">
+                <div class="swiperImg">
+                  <img src="./assets/img/services2.jpg" alt="service" />
+                </div>
+                <div class="swiperContent">
+                  <div class="swiperTop">
+                    <h3>
+                      <a href="./events.html">Finlande</a>
+                    </h3>
+                    <span class="price">$1200</span>
+                  </div>
+                  <p>
+                    <a href="#">12 Jan - 18 Jan</a>
+                    5 Days
+                  </p>
+                </div>
+              </li>
+              <li class="card">
+                <div class="swiperImg">
+                  <img src="./assets/img/services3.jpg" alt="service" />
+                </div>
+                <div class="swiperContent">
+                  <div class="swiperTop">
+                    <h3>
+                      <a href="./events.html">Spitzberg</a>
+                    </h3>
+                    <span class="price">$1200</span>
+                  </div>
+                  <p>
+                    <a href="#">12 Jan - 18 Jan</a>
+                    5 Days
+                  </p>
+                </div>
+              </li>
+              <li class="card">
+                <div class="swiperImg">
+                  <img src="./assets/img/services3.jpg" alt="service" />
+                </div>
+                <div class="swiperContent">
+                  <div class="swiperTop">
+                    <h3>
+                      <a href="./events.html">Mega Turkey</a>
+                    </h3>
+                    <span class="price">$1200</span>
+                  </div>
+                  <p>
+                    <a href="#">12 Jan - 18 Jan</a>
+                    5 Days
+                  </p>
+                </div>
+              </li>
+              <li class="card">
+                <div class="swiperImg">
+                  <img src="./assets/img/services1.jpg" alt="service" />
+                </div>
+                <div class="swiperContent">
+                  <div class="swiperTop">
+                    <h3>
+                      <a href="./events.html">Finlande</a>
+                    </h3>
+                    <span class="price">$1200</span>
+                  </div>
+                  <p>
+                    <a href="#">12 Jan - 18 Jan</a>
+                    5 Days
+                  </p>
+                </div>
+              </li>
+              <li class="card">
+                <div class="swiperImg">
+                  <img src="./assets/img/services2.jpg" alt="service" />
+                </div>
+                <div class="swiperContent">
+                  <div class="swiperTop">
+                    <h3>
+                      <a href="./events.html">Spitzberg</a>
+                    </h3>
+                    <span class="price">$1200</span>
+                  </div>
+                  <p>
+                    <a href="#">12 Jan - 18 Jan</a>
+                    5 Days
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <iframe id="videoFrame" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        <div class="container">
+        <div class="videoContainer">
+          <div class="videoContent">
+            <div class="videoIcon">
+              <img class="videoImg" src="./assets/svg/play-butto.svg" alt="play" >
+            </div>
+            <h3>Watch our last tour</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="swiper sample-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="bgScroll" src="./assets/img/instra1.jpg" alt="img"><img class="insta" src="./assets/svg/insta.svg" alt=""></div>
+          <div class="swiper-slide"><img class="bgScroll" src="./assets/img/instra2.jpg" alt="img"><img class="insta" src="./assets/svg/insta.svg" alt=""></div>
+          <div class="swiper-slide"><img class="bgScroll" src="./assets/img/instra3.jpg" alt="img"><img class="insta" src="./assets/svg/insta.svg" alt=""></div>
+          <div class="swiper-slide"><img class="bgScroll" src="./assets/img/instra4.jpg" alt="img"><img class="insta" src="./assets/svg/insta.svg" alt=""></div>
+          <div class="swiper-slide"><img class="bgScroll" src="./assets/img/instra5.jpg" alt="img"><img class="insta" src="./assets/svg/insta.svg" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footerTop">
+          <div class="footerFirst padding">
+            <div class="footerFirstTop">
+              <div class="logoFooterContainer">
+                <img src="./assets/img/logo2_footer.png" alt="logo" />
+              </div>
+              <p>
+                Land behold it created good saw after she'd Our set living.
+                Signs midst dominion creepeth morning laboris nisi ufsit
+                aliquip.
+              </p>
+            </div>
+            <nav class="footerSocials">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footerMiddle footerSecond padding">
+            <h4>Navigation</h4>
+            <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footerMiddle footerThird padding">
+            <h4>Services</h4>
+            <nav>
+              <ul>
+                <li><a href="#">Blackforest</a></li>
+                <li><a href="#">Bodhubon</a></li>
+                <li><a href="#">Rongdhonu</a></li>
+                <li><a href="#">Meghrong</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footerLast padding">
+            <div class="footerTitle">
+              <h4>Contact Us</h4>
+              <p>76/A, Green Lane, Dhanmondi, NYC</p>
+              <p>demomail89@gmail.com</p>
+              <a href="#">+10 (78) 738-9083</a>
+            </div>
+          </div>
+        </div>
+        <div class="footerBottom padding">
+          <div class="container">
+            <p>
+              Copyright ©2024 All rights reserved | This template is made with
+              :o by <a href="#">Colorlib</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./assets/js/scroll.js"></script>
+  <script src="./assets/js/collapse.js"></script>
+  <!-- <script src="./assets/js/main.js"></script> -->
+  <script src="./assets/js/video.js"></script>
 </body>
 </html>

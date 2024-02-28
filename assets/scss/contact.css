@@ -1213,4 +1213,22 @@ footer .container .footerBottom .container p a {
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 0.5rem;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.eventsTop {
+  background-image: url(../img/h1_hero6.jpg.webp);
+}
+
+.contactSection {
+  display: flex;
+  justify-content: center;
+  padding: 130px 0 100px;
+}
+.contactSection .container {
+  display: flex;
+  flex-direction: column;
+}
+.contactSection .container iframe {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+}/*# sourceMappingURL=contact.css.map */

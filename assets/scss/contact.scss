@@ -1,0 +1,29 @@
+@import 'globals';
+@import 'header';
+@import 'hero';
+@import 'swiperTop';
+@import 'swiper';
+@import 'about';
+@import 'testimonial';
+@import 'footer';
+@import 'faq';
+@import 'video';
+@import 'bottom';
+@import 'eventsTop';
+
+.eventsTop{
+  background-image: url(../img/h1_hero6.jpg.webp);
+}
+.contactSection{
+  display: flex;
+  justify-content: center;
+  padding: 130px 0 100px;
+  .container{
+    display: flex;
+    flex-direction: column;
+    iframe{
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+    }
+  }
+}

@@ -1186,31 +1186,135 @@ footer .container .footerBottom .container p a {
   transform: translateY(-15px);
 }
 
-.eventsTop {
-  background-image: url(../img/h1_hero2.jpg.webp);
+.blogTop {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  height: 300px;
+  height: 474px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (min-width: 575px) {
-  .eventsTop {
+  .blogTop {
     height: 400px;
   }
 }
 @media (min-width: 767px) {
-  .eventsTop {
-    height: 440px;
+  .blogTop {
+    height: 540px;
   }
 }
-.eventsTop .container h2 {
+@media (min-width: 1200px) {
+  .blogTop {
+    height: 650px;
+  }
+}
+.blogTop .container {
+  padding: 0 25px;
+}
+.blogTop .container .heroCard {
+  width: 58.3333333333%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px 50px 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blogTop .container .heroCard::before {
+  position: absolute;
+  content: "";
+  background: rgba(0, 9, 94, 0.2);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.blogTop .container .heroCard h2 {
   color: #fff;
   font-size: 60px;
   display: block;
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1;
   margin-bottom: 0.5rem;
-}/*# sourceMappingURL=main.css.map */
+  z-index: 999;
+}
+.blogTop .container .heroCard .heroContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 999;
+}
+.blogTop .container .heroCard .heroContent p {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  display: flex;
+}
+.blogTop .container .heroCard .heroContent p a {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  padding: 9px 15px;
+  border-radius: 19px;
+  margin-right: 13px;
+  transition: all 0.3s ease-out 0s;
+}
+.blogTop .container .heroCard .heroContent span {
+  font-size: 34px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.blogTop {
+  background-image: url(../img/h1_hero3.jpg.webp);
+}
+
+.plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+.plan .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan .container .days {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 66.6666666667%;
+}
+.plan .container .days .day {
+  margin-bottom: 45px;
+}
+.plan .container .days .day h2 {
+  font-size: 44px;
+  display: block;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 22px;
+}
+.plan .container .days .day p {
+  color: #677F8B;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}/*# sourceMappingURL=blog.css.map */

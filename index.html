@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
@@ -28,14 +33,19 @@
             <li><a href="./index.html">Home</a></li>
             <li><a href="./events.html">Events</a></li>
             <li><a href="./about.html">About</a></li>
-            <li><a href="./blog.html">Blog</a></li>
+            <li>
+              <a href="./blog.html">Blog</a>
+              <ul class="dropdown">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Event Details</a></li>
+                <li><a href="#">Blog Details</a></li>
+                <li><a href="#">Element</a></li>
+              </ul>
+            </li>
             <li><a href="./contact.html">Contact</a></li>
             <li class="buttonHeader">
               <a href="#" class="headerBtn"
-                ><img
-                  src="./assets/svg/phone.svg"
-                  alt=""
-                />+10 (67) 678 2567</a
+                ><img src="./assets/svg/phone.svg" alt="" />+10 (67) 678 2567</a
               >
             </li>
           </ul>
@@ -45,12 +55,14 @@
     <main>
       <section class="hero">
         <div class="heroContent">
-          <h1>
+          <h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
             Lifelong memories just a
             <div class="yellowBottom">few seconds away</div>
           </h1>
-          <p>Let's start your journey with us, your dream will come true</p>
-          <button class="btn sliderBtn">Explore Destinations</button>
+          <p data-aos="fade-up" data-aos-delay="900" data-aos-duration="600">
+            Let's start your journey with us, your dream will come true
+          </p>
+          <button class="btn sliderBtn"  data-aos="zoom-in" data-aos-delay="1400" data-aos-duration="500"><div>Explore Destinations</div></button>
         </div>
         <div class="slider">
           <div class="container">
@@ -228,7 +240,7 @@
                 enim ad minim veniam quis nostrud exercitation.
               </p>
               <a href="./about.html" class="btn aboutBtn"
-                >Book Your Destination</a
+                ><div>Book Your Destination</div></a
               >
             </div>
           </div>
@@ -238,7 +250,7 @@
         <div class="container">
           <div class="itemPerson">
             <div class="testimonialTop">
-              <h2>What customers say</h2>
+              <h2>What coustomers say</h2>
               <p>
                 "Let's start your journey with us, your dream will come true.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -259,62 +271,152 @@
       </section>
       <section class="faq">
         <div class="container">
-          <div class="faqTop"> 
+          <div class="faqTop">
             <span>FAQ</span>
             <h2>Full range of travel service</h2>
           </div>
           <div class="faqBottom">
             <div class="collapses padding">
-              <a class="collapsible"><img src="./assets/svg/plus-svgrepo-com.svg" class="plus" alt="plus"><img src="./assets/svg/minus.svg" alt="plus" class="icon">Starts the automated process.</a>
+              <a class="collapsible"
+                ><img
+                  src="./assets/svg/plus-svgrepo-com.svg"
+                  class="plus"
+                  alt="plus"
+                /><img
+                  src="./assets/svg/minus.svg"
+                  alt="plus"
+                  class="icon"
+                />Starts the automated process.</a
+              >
               <div class="content">
                 <p>
-                  The automated process starts as soon as
-                  your clothes go into the machine. Duis cursus, mi
-                  quis viverra ornare.
+                  The automated process starts as soon as your clothes go into
+                  the machine. Duis cursus, mi quis viverra ornare.
                 </p>
               </div>
-              <a class="collapsible"><img src="./assets/svg/plus-svgrepo-com.svg" class="plus" alt="plus"><img src="./assets/svg/minus.svg" alt="plus" class="icon">The automated process starts.</a>
+              <a class="collapsible"
+                ><img
+                  src="./assets/svg/plus-svgrepo-com.svg"
+                  class="plus"
+                  alt="plus"
+                /><img
+                  src="./assets/svg/minus.svg"
+                  alt="plus"
+                  class="icon"
+                />The automated process starts.</a
+              >
               <div class="content">
                 <p>
-                  The automated process starts as soon as
-                  your clothes go into the machine. Duis cursus, mi
-                  quis viverra ornare.
+                  The automated process starts as soon as your clothes go into
+                  the machine. Duis cursus, mi quis viverra ornare.
                 </p>
               </div>
-              <a class="collapsible"><img src="./assets/svg/plus-svgrepo-com.svg" class="plus" alt="plus"><img src="./assets/svg/minus.svg" alt="plus" class="icon">Automated process starts.</a>
+              <a class="collapsible"
+                ><img
+                  src="./assets/svg/plus-svgrepo-com.svg"
+                  class="plus"
+                  alt="plus"
+                /><img
+                  src="./assets/svg/minus.svg"
+                  alt="plus"
+                  class="icon"
+                />Automated process starts.</a
+              >
               <div class="content">
                 <p>
-                  The automated process starts as soon as
-                  your clothes go into the machine. Duis cursus, mi
-                  quis viverra ornare.
+                  The automated process starts as soon as your clothes go into
+                  the machine. Duis cursus, mi quis viverra ornare.
                 </p>
               </div>
-              <a class="collapsible"><img src="./assets/svg/plus-svgrepo-com.svg" class="plus" alt="plus"><img src="./assets/svg/minus.svg" alt="plus" class="icon">Process the automated magic.</a>
+              <a class="collapsible"
+                ><img
+                  src="./assets/svg/plus-svgrepo-com.svg"
+                  class="plus"
+                  alt="plus"
+                /><img
+                  src="./assets/svg/minus.svg"
+                  alt="plus"
+                  class="icon"
+                />Process the automated magic.</a
+              >
               <div class="content">
                 <p>
-                  The automated process starts as soon as
-                  your clothes go into the machine. Duis cursus, mi
-                  quis viverra ornare.
+                  The automated process starts as soon as your clothes go into
+                  the machine. Duis cursus, mi quis viverra ornare.
                 </p>
               </div>
             </div>
             <div class="faqBg padding">
-              <img src="./assets/img/about2.png" alt="faqBg">
+              <img src="./assets/img/about2.png" alt="faqBg" />
             </div>
           </div>
           <div class="faqBtn">
-            <a href="./about.html" class="btn aboutBtn">Book Your Destination</a>
+            <a href="./about.html" class="btn aboutBtn"
+              ><div>Book Your Destination</div></a
+            >
           </div>
         </div>
       </section>
       <section class="video">
-        <iframe id="videoFrame" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        <div class="container">
+        <iframe
+          id="videoFrame"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <div class="container">
           <div class="videoContainer">
             <div class="videoContent">
               <div class="videoIcon">
-                <img class="videoImg" src="./assets/svg/play-butto.svg" alt="play" >
+                <img
+                  class="videoImg"
+                  src="./assets/svg/play-butto.svg"
+                  alt="play"
+                />
               </div>
               <h3>Watch our last tour</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="swiper sample-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="bgScroll"
+                src="./assets/img/instra1.jpg"
+                alt="img"
+              /><img class="insta" src="./assets/svg/insta.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="bgScroll"
+                src="./assets/img/instra2.jpg"
+                alt="img"
+              /><img class="insta" src="./assets/svg/insta.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="bgScroll"
+                src="./assets/img/instra3.jpg"
+                alt="img"
+              /><img class="insta" src="./assets/svg/insta.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="bgScroll"
+                src="./assets/img/instra4.jpg"
+                alt="img"
+              /><img class="insta" src="./assets/svg/insta.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="bgScroll"
+                src="./assets/img/instra5.jpg"
+                alt="img"
+              /><img class="insta" src="./assets/svg/insta.svg" alt="" />
             </div>
           </div>
         </div>
@@ -393,7 +495,14 @@
         </div>
       </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./assets/js/scroll.js"></script>
     <script src="./assets/js/collapse.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/video.js"></script>
   </body>
 </html>

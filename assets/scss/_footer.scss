@@ -9,8 +9,8 @@ footer {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding-top: 114px;
-      padding-bottom: 45px;
+      padding-top: 120px;
+      padding-bottom: 50px;
       .footerFirst {
         width: 100%;
         @media (min-width: 576px){
@@ -24,13 +24,30 @@ footer {
         }
         .footerFirstTop {
           .logoFooterContainer {
-            margin-bottom: 35px;
+            margin-bottom: 29px;
           }
           p {
             color: #8a8fbe;
             font-size: 16px;
             margin-bottom: 21px;
             line-height: 1.8;
+          }
+        }
+        .footerSocials{
+          ul{
+          display: flex;
+          gap: 4px;
+          li{
+            i{
+              transition: 0.6s;
+            }
+            &:hover{
+              i{
+                color: #FFC800;
+                transform: translateY(-7px);
+              }
+            }
+          }
           }
         }
         nav {
@@ -54,7 +71,7 @@ footer {
           font-family: "Roboto", sans-serif;
           color: #fff;
           font-size: 17px;
-          margin-bottom: 28px;
+          margin-bottom: 25px;
           font-weight: 700;
         }
         nav {
@@ -62,7 +79,13 @@ footer {
             display: flex;
             flex-direction: column;
             li {
-              margin-bottom: 15px;
+              margin-bottom: 13px;
+              &:hover{
+                a{
+                  text-decoration: underline;
+                  color: #fff;
+                }
+              }
               a {
                 color: #8a8fbe;
                 font-weight: 400;
@@ -129,7 +152,7 @@ footer {
             margin-bottom: 0px;
             font-weight: 400 !important;
             display: block;
-          }
+            }
         }
       }
     }

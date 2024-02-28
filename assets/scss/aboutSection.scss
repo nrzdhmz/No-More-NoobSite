@@ -8,5 +8,11 @@
 @import 'footer';
 @import 'faq';
 @import 'video';
-@import 'bottom';
+@import 'bottom'; 
 @import 'eventsTop';
+
+
+.eventsTop{
+  background-image: url(../img/h1_hero4.jpg.webp);
+  margin-bottom: 100px;
+}

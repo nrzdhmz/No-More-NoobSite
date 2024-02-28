@@ -1,44 +1,106 @@
-header{
-  .headerContainer{
+header {
+  transition: top 0.3s ease-in-out;
+  .headerContainer {
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (min-width: 767px){
+    @media (min-width: 767px) {
       padding: 10px 65px;
     }
-    @media (min-width: 991px){
+    @media (min-width: 991px) {
       padding: 0 30px;
     }
-    @media (min-width: 1200px){
+    @media (min-width: 1200px) {
       padding: 0 45px;
     }
-    .logoContainer{
-      width: calc(2/12 * 100%);
+    .logoContainer {
+      width: calc(2 / 12 * 100%);
       display: flex;
       align-items: center;
     }
-    nav{
-      width: calc(10/12 * 100%);
-      .navigation{
+    nav {
+      width: calc(10 / 12 * 100%);
+      .navigation {
         justify-content: end;
-        margin-right: 30px;
         align-items: center;
         display: none;
-        @media (min-width: 991px){
+        @media (min-width: 991px) {
           display: flex;
         }
-        li{
-          margin: 0 14px;
-          a{
-            color: #00095E;
+        .buttonHeader{
+          margin:0 15px 0 28px;
+        }
+        li {
+          margin: 0 15px;
+          position: relative;
+          &:hover{
+            .dropdown{
+              visibility: visible;
+              opacity: 1;
+              transform: translateY(0px);
+            }
+          }
+          .dropdown {
+            background: linear-gradient(to bottom, #00095e 0%, #0c0c1f 100%);
+            position: absolute;
+            width: 170px;
+            left: 0;
+            top: 100%;
+            visibility: hidden;
+            z-index: 99999;
+            opacity: 0;
+            box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+            padding: 17px 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease-out 0s;
+            li {
+              margin-left: 7px;
+              display: block;
+              a {
+                padding: 6px 10px !important;
+                font-size: 16px;
+                color: #fff;  
+                font-weight: 500;
+                transition: all .3s ease-out 0s;
+                &:hover{
+                  transform: translateX(4px);
+                  &::after{
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+          a {
+            color: #00095e;
             font-weight: 500;
             padding: 39px 2px;
             display: block;
             font-size: 16px;
-            transition: all .3s ease-out 0s;
+            transition: all 0.3s ease-out 0s;
+            font-family: "Josefin Sans", sans-serif;
+            position: relative;
+            &:hover {
+              color: #7ea0ff;
+              &::after {
+                width: 100%;
+                left: 0;
+              }
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              width: 0;
+              bottom: 30px;
+              right: 5px;
+              left: -5px;
+              height: 2px;
+              transition: all 0.4s ease-out 0s;
+              background: #7ea0ff;
+            }
           }
-          .headerBtn{
+          .headerBtn {
             display: flex !important;
             align-items: center !important;
             gap: 5px;
@@ -47,15 +109,31 @@ header{
             font-weight: 500 !important;
             border-radius: 5px;
             padding: 13px 30px !important;
-            background: #FFC800;
-            img{
+            background: #ffc800;
+            margin-left: 16px;
+            &::after{
+              display: none;
+            }
+            img {
               filter: invert(100%);
               width: 20px;
               height: 20px;
+              margin-right: 5px;
             }
           }
         }
       }
     }
   }
+}
+
+.fixedHeader {
+  position: fixed;
+  top: -100px; /* Initially hide the fixed header off-screen */
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: top 0.3s ease-in-out; /* Add transition for smooth animation */
 }
