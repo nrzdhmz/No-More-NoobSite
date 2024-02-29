@@ -1,5 +1,4 @@
 .eventsTop{
-  background-image: url(../img/h1_hero2.jpg.webp);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -23,4 +22,14 @@
       margin-bottom: 0.5rem;
     }
   }
+}
+.eventsBg{
+  background-image: url(../img/h1_hero2.jpg.webp);
+}
+.aboutBg{
+  background-image: url(../img/h1_hero4.jpg.webp);
+  margin-bottom: 100px;
+}
+.contactTop{
+  background-image: url(../img/h1_hero6.jpg.webp);
 }

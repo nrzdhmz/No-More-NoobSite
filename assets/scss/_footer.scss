@@ -123,7 +123,7 @@ footer {
       }
       .footerLast {
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 0;
         @media (min-width: 576px){
           width: calc(12 / 12 * 100%);
         }
@@ -132,6 +132,7 @@ footer {
         }
         @media (min-width: 992px){
           width: calc(3 / 12 * 100%);
+          margin-bottom: 50px;
         }
         .footerTitle {
           h4 {
@@ -157,12 +158,16 @@ footer {
       }
     }
     .footerBottom {
-      padding-top: 45px;
+      padding-top: 0;
       padding-bottom: 1px;
       width: calc(12 / 12 * 100%);
+      @media (min-width: 991px){
+        padding-top: 45px;
+      }   
       .container {
         display: flex;
         justify-content: center;
+        text-align: center;
         p {
           color: #8A8FBE;
           font-weight: 400;

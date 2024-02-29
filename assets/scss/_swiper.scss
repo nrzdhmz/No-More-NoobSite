@@ -16,15 +16,19 @@
         box-shadow: 0 3px 6px rgba(0,0,0,0.23);
         transform: translateY(-50%);
         transition: transform 0.1s linear;
+        display: none;
+        @media (min-width: 575px){
+          display: block;
+        }   
         &:active{
           transform: translateY(-50%) scale(0.85);
         }
         &:first-child{
-          left: -55px;
+          left: -22px;
           z-index: 999;
         }
         &:last-child{
-          right: -55px; 
+          right: -22px; 
           z-index: 999;
         }
       }

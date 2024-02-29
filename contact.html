@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/scss/contact.css" />
+    <link rel="stylesheet" href="./assets/scss/main.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -51,12 +51,12 @@
       </div>
     </header>
     <main>
-      <section class="eventsTop">
+      <section class="eventsTop contactTop">
         <div class="container">
           <h2>Contact</h2>
         </div>
       </section>
-      <section class="contactSection">
+      <section class="map">
         <div class="container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.142549252187!2d49.808031275481206!3d40.383533157659954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d7c858c8d33%3A0xe51ced2ed687d883!2sTexnoera%20Academy!5e0!3m2!1sen!2saz!4v1709103381352!5m2!1sen!2saz"
@@ -64,48 +64,68 @@
             height="480"
             style="border: 0"
             allowfullscreen=""
-            loading="lazy"
+            loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </section>
-      <section>
-        <div class="swiper sample-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                class="bgScroll"
-                src="./assets/img/instra1.jpg"
-                alt="img"
-              /><img class="insta" src="./assets/svg/insta.svg" alt="" />
+      <section class="contact">
+        <div class="container">
+          <div class="top">
+            <h2 class="padding">Get in Touch</h2>
+          </div>
+          <div class="form">
+            <div class="left">
+              <form action="#">
+                <div class="message-input">
+                  <div class="textContainer padding">
+                    <textarea class="formPadding" name="message" placeholder="Enter Message" id="message"></textarea>
+                    <label for="message" class="error" id="messageLabel">um...yea, you have to write something to send this form.</label>
+                    <label for="message" id="write">that is all? really?</label>
+                  </div>
+                  <div class="nameContainer padding">
+                    <input class="formPadding" type="text" name="name" placeholder="Enter your Name">                    
+                  </div>
+                  <div class="emailContainer padding">
+                    <input class="formPadding" type="email" placeholder="Email">
+                  </div>
+                  <div class="subjectContainer padding">
+                    <input class="formPadding" type="text" name="subject" placeholder="Enter Subject">
+                  </div>
+                  <div class="padding">
+                    <button class="contactBtn">Send</button>                    
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class="swiper-slide">
-              <img
-                class="bgScroll"
-                src="./assets/img/instra2.jpg"
-                alt="img"
-              /><img class="insta" src="./assets/svg/insta.svg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="bgScroll"
-                src="./assets/img/instra3.jpg"
-                alt="img"
-              /><img class="insta" src="./assets/svg/insta.svg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="bgScroll"
-                src="./assets/img/instra4.jpg"
-                alt="img"
-              /><img class="insta" src="./assets/svg/insta.svg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="bgScroll"
-                src="./assets/img/instra5.jpg"
-                alt="img"
-              /><img class="insta" src="./assets/svg/insta.svg" alt="" />
+            <div class="right padding">
+              <div class="media">
+                <div class="mediaImg">
+                  <img src="./assets/svg/telephone-bill-svgrepo-com.svg" alt="home icon">
+                </div>
+                <div class="mediaBody">
+                  <h3>Buttonwood, California.</h3>
+                  <p>Rosemead, CA 91770</p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="mediaImg">
+                  <img src="./assets/svg/telephone-bill-svgrepo-com.svg" alt="telephone">
+                </div>
+                <div class="mediaBody">
+                  <h3>+1 253 565 2365</h3>
+                  <p>Mon to Fri 9am to 6pm</p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="mediaImg">
+                  <img src="./assets/svg/telephone-bill-svgrepo-com.svg" alt="email">
+                </div>
+                <div class="mediaBody">
+                  <h3>Buttonwood, California.</h3>
+                  <p>Rosemead, CA 91770</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -177,7 +197,7 @@
             <div class="container">
               <p>
                 Copyright ©2024 All rights reserved | This template is made with
-                :o by <a href="#">Colorlib</a>
+                :o by <a href="#">@nrzdhmz</a>
               </p>
             </div>
           </div>

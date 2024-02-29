@@ -4,8 +4,13 @@ const swiper = new Swiper('.sample-slider', {
       delay: 3000,
   },
   speed: 3000,
-  slidesPerView: 5,
-})
+  slidesPerView: 2,
+  breakpoints: {
+    767: {
+      slidesPerView: 5
+    }
+  }
+});
 
 window.addEventListener('scroll', function() {
   var header = document.querySelector('header');
@@ -15,5 +20,23 @@ window.addEventListener('scroll', function() {
   } else {
     header.classList.remove('fixedHeader');
     header.style.top = "-100px"; // Hide the fixed header
+  }
+});
+
+
+// 
+
+const messageTextarea = document.getElementById('message');
+const messageLabel = document.getElementById('messageLabel');
+const writeLabel = document.getElementById('write');
+
+messageTextarea.addEventListener('input', () => {
+  const message = messageTextarea.value.trim();
+  if (message === '') {
+    messageLabel.style.display = 'block';
+    writeLabel.style.display = 'none';
+  } else {
+    messageLabel.style.display = 'none';
+    writeLabel.style.display = 'block';
   }
 });

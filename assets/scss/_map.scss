@@ -1,0 +1,18 @@
+.map{
+  display: none;
+  justify-content: center;
+  @media (min-width: 576px){
+    display: flex;
+  } 
+  @media (min-width: 767px){
+    padding-top: 0;
+  } 
+  .container{
+    display: flex;
+    padding-top: 130px;
+    iframe{
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+    }
+  }
+} 
