@@ -13,7 +13,7 @@
       flex-direction: column;
       margin-bottom: 45px;
       span{
-        color: #7EA0FF;
+        color: $lightblue;
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 10px;
@@ -27,7 +27,7 @@
         font-weight: 700;
         line-height: 1.4;
         margin-bottom: 22px;
-        color: #00095E;
+        color: $bluetext;
       }
     }
   }

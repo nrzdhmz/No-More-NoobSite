@@ -31,7 +31,7 @@
           font-size: 29px;
           margin-bottom: 20px;
           font-weight: 700;
-          color: #fff;
+          color: $allwhite;
           @media (min-width: 575px){
             font-size: 42px;
             margin-bottom: 30px;
@@ -49,7 +49,7 @@
           line-height: 1.5;
           margin-bottom: 32px;
           font-size: 15px;
-          color: #fff;
+          color: $allwhite;
           font-weight: 400;
           padding: 0px;
           margin-bottom: 30px;
@@ -75,7 +75,7 @@
           text-align: left;
           span{
             font-family: "Roboto",sans-serif;
-            color: #fff;
+            color: $allwhite;
             font-size: 26px;
             font-weight: 600;
             text-align: left;
@@ -84,7 +84,7 @@
             }   
           }
           p{
-            color: #fff;
+            color: $allwhite;
             width: 100%;
             font-weight: 500;
             line-height: 1.5;

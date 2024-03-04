@@ -11,7 +11,7 @@
         position: absolute;
         text-align: center;
         line-height: 50px;
-        background: #fafafa;
+        background: $white;
         border-radius: 50%;
         box-shadow: 0 3px 6px rgba(0,0,0,0.23);
         transform: translateY(-50%);
@@ -51,7 +51,7 @@
         .card{
           scroll-snap-align: start;
           margin-bottom: 30px !important;
-          background: #fff;
+          background: $white;
           cursor: pointer;
           flex-direction: column;
           .swiperImg{
@@ -78,12 +78,12 @@
               justify-content: space-between;
               h3{
                 font-family: "Josefin Sans",sans-serif;
-                color: #00095E;
+                color: $bluetext;
                 margin-top: 0px;
                 font-style: normal;
                 font-weight: 500;
                 a{
-                  color: #00095E;
+                  color: $bluetext;
                   font-family: "Josefin Sans",sans-serif;
                   font-size: 22px;
                   font-weight: 700;
@@ -94,19 +94,19 @@
               .price{
                 font-size: 22px;
                 font-weight: 700;
-                color: #7EA0FF;
+                color: $lightblue;
                 line-height: 1;
               }
             }
             p{
-              color: #00095E;
+              color: $bluetext;
               font-size: 14px;
               font-weight: 500;
               margin: 0;
               padding: 0;
               line-height: 1.4;
               a{
-                color: #7EA0FF;
+                color: $lightblue;
                 background: rgba(126,160,255,0.05);
                 font-size: 14px;
                 display: inline-block;

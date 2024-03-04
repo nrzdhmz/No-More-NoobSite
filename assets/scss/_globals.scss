@@ -1,3 +1,32 @@
+$lightblue: #7EA0FF;
+$gray: #677F8B;
+$bgblue: rgba(0, 9, 94, 0.2);
+$white: #ffffff;
+$allwhite: #ffffff;
+$bggray: rgba(255, 255, 255, 0.3);
+$bgmexico: #4A3600;
+$bluetext: #00095E;
+$graytext: #495057;
+$graynav: #4c4c4c;
+$darkblue: #010A44;
+$black: #222;
+$darker: #212529;
+$lighterblue: #42434d;
+$yellow: #FFC800;
+$pdefault: #677F8B;
+$cyan: #8A8FBE;
+$footerbg: linear-gradient(135deg, #1a2d6d 0%, #0c1534 100%);
+$bglinear: linear-gradient(to bottom, #00095e 0%, #0c0c1f 100%);
+$boxshadow: rgba(0, 0, 0, 0.05);
+$boxshadow2: rgba(0, 9, 94, 0.06);
+$wood: rgba(255, 200, 0, 0.2);
+
+@if lightness($white) < 50% { 
+  $bluetext: #fff;
+  $lighterblue: #c6c6c6;
+  $gray: #fff;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -10,7 +39,7 @@ body{
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: $darker;
 }
 .padding{
   padding: 0 15px;
@@ -20,11 +49,10 @@ h4{
 }
 p{
   font-family: "Roboto",sans-serif;
-  color: #677F8B;
+  color: $pdefault;
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 15px;
-  font-weight: normal;
   line-height: 1.4;
 }
 a{
@@ -46,4 +74,7 @@ a{
   @media (min-width: 1200px){
     max-width: 1200px;
   }
+}
+.padding100{
+  padding-top: 100px;
 }

@@ -1,0 +1,57 @@
+
+.btn {
+  background: $yellow;
+  font-family: "Roboto", sans-serif;
+  text-transform: inherit !important;
+  padding: 30px 43px;
+  color: $white !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  border-radius: 5px;
+  line-height: 1;
+  z-index: 1;
+  line-height: 0;
+  transition: color 0.4s linear;
+  position: relative;
+  border: 0;
+  overflow: hidden;
+  div{
+    position: relative;
+    z-index: 9999;
+    color: #fff;
+  }
+  &::before {
+    content: "";
+    background: $bglinear;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 102%;
+    height: 102%;
+    z-index: 1;
+    border-radius: 0px;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleY(0);
+    border-radius: 0px;
+  }
+  &:hover {
+    &::before{
+      transform: scaleY(1.03);
+      z-index: 10;
+    }
+  }
+}
+.sliderBtn {
+  background: $bglinear;
+  padding: 35px 60px;
+  &:hover {
+    &::before{
+      background: $yellow;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 .map{
   display: none;
   justify-content: center;
+  background-color: $white;
   @media (min-width: 576px){
     display: flex;
   } 

@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $white;
   @media (min-width: 575px){
     height: 400px;
   }   
@@ -14,7 +15,7 @@
   }
   .container{
     h2{
-      color: #fff;
+      color: $allwhite;
       font-size: 60px;
       display: block;
       font-weight: 700;
@@ -28,7 +29,6 @@
 }
 .aboutBg{
   background-image: url(../img/h1_hero4.jpg.webp);
-  margin-bottom: 100px;
 }
 .contactTop{
   background-image: url(../img/h1_hero6.jpg.webp);

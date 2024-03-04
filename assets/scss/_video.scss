@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   position: relative;
+  background-color: $white;
   iframe{
     position: absolute;
     z-index: 2000;
@@ -39,7 +40,7 @@
           cursor: pointer;
         }
         h3{
-          color: #fff;
+          color: $allwhite;
           font-weight: 600;
           font-size: 30px;
         }
@@ -55,7 +56,7 @@
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background: #4A3600;
+  background: $bgmexico;
   opacity: 0.6;
   height: 5824px;
   position: absolute;

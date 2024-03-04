@@ -16,11 +16,11 @@ window.addEventListener('scroll', function() {
   var header = document.querySelector('header');
   if (window.scrollY > 600) {
     header.classList.add('fixedHeader');
-    header.style.top = "0"; // Show the fixed header
+    header.style.top = "0";
   } else {
     header.classList.remove('fixedHeader');
-    header.style.top = "-100px"; // Hide the fixed header
-  }
+    header.style.top = "-100px"; 
+  } 
 });
 
 
@@ -40,3 +40,14 @@ messageTextarea.addEventListener('input', () => {
     writeLabel.style.display = 'block';
   }
 });
+
+
+// 
+function toggleStickyMenu() {
+  var stickyNav = document.getElementById('sticky');
+  if (stickyNav.style.display === 'none') {
+    stickyNav.style.display = 'flex';
+  } else {
+    stickyNav.style.display = 'none';
+  }
+}

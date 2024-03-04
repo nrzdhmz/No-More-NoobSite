@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/scss/main.css" />
-    <title>Portfolio</title>
+    <title>Tralive</title>
   </head>
   <body>
     <div class="mfp-bg"></div>
@@ -45,6 +45,33 @@
               <a href="#" class="headerBtn"
                 ><img src="./assets/svg/phone.svg" alt="" />+10 (67) 678 2567</a
               >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="stickyMenu">
+        <div class="menu" onclick="toggleStickyMenu()">
+          <div class="menutext">
+            MENU
+          </div>
+          <div class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <nav class="padding" id="sticky">
+          <ul class="navigation">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li>
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li class="buttonHeader">
+              <a href="#" class="headerBtn">
+                <img src="./assets/svg/phone.svg" alt="" />+10 (67) 678 2567</a>
             </li>
           </ul>
         </nav>
@@ -79,7 +106,7 @@
               <form action="#">
                 <div class="message-input">
                   <div class="textContainer padding">
-                    <textarea class="formPadding" name="message" placeholder="Enter Message" id="message"></textarea>
+                    <textarea class="formPadding" name="message" placeholder="Enter Message" id="message" required></textarea>
                     <label for="message" class="error" id="messageLabel">um...yea, you have to write something to send this form.</label>
                     <label for="message" id="write">that is all? really?</label>
                   </div>
@@ -93,10 +120,10 @@
                     <input class="formPadding" type="text" name="subject" placeholder="Enter Subject">
                   </div>
                   <div class="padding">
-                    <button class="contactBtn">Send</button>                    
+                    <button class="contactBtn" type="submit" required>Send</button>                    
                   </div>
                 </div>
-              </form>
+              </form>              
             </div>
             <div class="right padding">
               <div class="media">
@@ -122,8 +149,8 @@
                   <img src="./assets/svg/telephone-bill-svgrepo-com.svg" alt="email">
                 </div>
                 <div class="mediaBody">
-                  <h3>Buttonwood, California.</h3>
-                  <p>Rosemead, CA 91770</p>
+                  <h3>support@colorlib.com</h3>
+                  <p>Send us your query!</p>
                 </div>
               </div>
             </div>
@@ -165,11 +192,11 @@
               <h4>Navigation</h4>
               <nav>
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./about.html">About</a></li>
                   <li><a href="#">Services</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="./blog.html">Blog</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -206,8 +233,5 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/scroll.js"></script>
-    <!-- <script src="./assets/js/collapse.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/video.js"></script> -->
   </body>
 </html>

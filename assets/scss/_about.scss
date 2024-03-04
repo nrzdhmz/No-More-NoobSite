@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 120px;
+  background-color: $white;
   .container{
     display: flex;
     flex-direction: column;
@@ -37,7 +38,7 @@
       }
       .sectionTitle{
         span{
-          color: #7EA0FF;
+          color: $lightblue;
           font-size: 16px;
           font-weight: 400;
           margin-bottom: 10px;
@@ -52,7 +53,7 @@
           font-weight: 700;
           line-height: 1.4;
           margin-bottom: 22px;
-          color: #00095E;
+          color: $bluetext;
           @media (min-width: 575px){
             font-size: 31px;
           }  
@@ -74,7 +75,7 @@
           line-height: 1.8;
           margin-bottom: 50px;
           font-family: "Roboto",sans-serif;
-          color: #677F8B;
+          color: $gray;
         }
         .aboutBtn{
           padding: 30px 40px;

@@ -32,7 +32,7 @@
       &::before {
         position: absolute;
         content: "";
-        background: rgba(0, 9, 94, 0.2);
+        background: $bgblue;
         top: 0;
         left: 0;
         right: 0;
@@ -42,7 +42,7 @@
         border-radius: 10px;
       }
       h2 {
-        color: #fff;
+        color: $allwhite;
         font-size: 60px;
         display: block;
         font-weight: 700;
@@ -57,7 +57,7 @@
         justify-content: center;
         z-index: 999;
         p {
-          color: #ffff;
+          color: $allwhite;
           font-size: 14px;
           font-weight: 500;
           padding: 0;
@@ -65,8 +65,8 @@
           line-height: 1.6;
           display: flex;
           a {
-            color: #fff;
-            background: rgba(255, 255, 255, 0.3);
+            color: $allwhite;
+            background: $bggray;
             font-size: 14px;
             display: inline-block;
             font-weight: 500;
@@ -81,7 +81,7 @@
         span {
           font-size: 34px;
           font-weight: 600;
-          color: #fff;
+          color: $allwhite;
         }
       }
     }

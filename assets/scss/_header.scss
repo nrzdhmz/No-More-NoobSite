@@ -5,6 +5,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    background-color: $white;
     @media (min-width: 767px) {
       padding: 10px 65px;
     }
@@ -42,7 +44,7 @@ header {
             }
           }
           .dropdown {
-            background: linear-gradient(to bottom, #00095e 0%, #0c0c1f 100%);
+            background: $bglinear;
             position: absolute;
             width: 170px;
             left: 0;
@@ -60,7 +62,7 @@ header {
               a {
                 padding: 6px 10px !important;
                 font-size: 16px;
-                color: #fff;  
+                color: $white;  
                 font-weight: 500;
                 transition: all .3s ease-out 0s;
                 &:hover{
@@ -73,7 +75,7 @@ header {
             }
           }
           a {
-            color: #00095e;
+            color: $bluetext;
             font-weight: 500;
             padding: 39px 2px;
             display: block;
@@ -82,7 +84,7 @@ header {
             font-family: "Josefin Sans", sans-serif;
             position: relative;
             &:hover {
-              color: #7ea0ff;
+              color: $lightblue;
               &::after {
                 width: 100%;
                 left: 0;
@@ -97,43 +99,113 @@ header {
               left: -5px;
               height: 2px;
               transition: all 0.4s ease-out 0s;
-              background: #7ea0ff;
+              background: $lightblue;
             }
-          }
-          .headerBtn {
-            display: flex !important;
-            align-items: center !important;
-            gap: 5px;
-            color: #fff !important;
-            font-size: 16px !important;
-            font-weight: 500 !important;
-            border-radius: 5px;
-            padding: 13px 30px !important;
-            background: #ffc800;
-            margin-left: 16px;
-            &::after{
-              display: none;
-            }
-            img {
-              filter: invert(100%);
-              width: 20px;
-              height: 20px;
-              margin-right: 5px;
-            }
-          }
+          }``
         }
       }
     }
   }
 }
 
+.headerBtn {
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px;
+  width: 225px;
+  color: $white !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  border-radius: 5px;
+  padding: 13px 30px !important;
+  background: $yellow !important;
+  margin-left: 16px;
+  &::after{
+    display: none;
+  }
+  img {
+    filter: invert(100%);
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+}
+
 .fixedHeader {
   position: fixed;
-  top: -100px; /* Initially hide the fixed header off-screen */
+  top: -100px;
   left: 0;
   width: 100%;
   z-index: 9999;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  transition: top 0.3s ease-in-out; /* Add transition for smooth animation */
+  background-color: $white;
+  transition: top 0.3s ease-in-out; 
+}
+
+.stickyMenu{
+  background: $graynav;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  z-index: 99999;
+  .navigation{
+    display: flex;
+    flex-direction: column;
+    li{
+      a{
+        display: block;
+        color: $allwhite;
+        padding: 5px 10px;
+        margin: 2px 5px;
+        font-size: 14px;
+        border-radius: 4px;
+      }
+    }
+  }
+  @media (min-width: 991px){
+    display: none;
+  } 
+  .menu{
+    margin: 5px 5px 6px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: $black;
+    padding: 0.438em 0.625em;
+    line-height: 1.125em;
+    position: relative;
+    gap: 5px;
+    align-self: flex-end;
+    cursor: pointer;
+    .menutext{
+      color: $allwhite;
+      display: flex;
+      text-align: center;
+    }
+    .burger {
+      z-index: 10000;
+      cursor: pointer;
+      background-color: transparent;
+      transition: 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      .bar{
+        width: 18px;
+        height: 1.5px;
+        background-color: $allwhite;
+      }
+    }
+  }
+}
+
+
+#sticky{
+  display: none;
+}
+.stickyMenu.active #sticky {
+  display: flex;
 }

@@ -11,9 +11,9 @@
         position: absolute;
         text-align: center;
         line-height: 50px;
-        background: #fafafa;
+        background: adjust-color($white, $lightness: -3%);
         border-radius: 50%;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+        box-shadow: 0 3px 6px $boxshadow;
         transform: translateY(-50%);
         transition: transform 0.1s linear;
         display: none;
@@ -65,19 +65,19 @@
           .swiperContent{
             border-radius: 0px 0px 5px 5px;
             padding: 30px 20px 30px 23px;
-            box-shadow: 0 10px 15px rgba(0,9,94,0.06);
+            box-shadow: 0 10px 15px $boxshadow2;
             transition: all .3s ease-out 0s;
             .swiperTop{
               display: flex;
               justify-content: space-between;
               h3{
                 font-family: "Josefin Sans",sans-serif;
-                color: #00095E;
+                color: $bluetext;
                 margin-top: 0px;
                 font-style: normal;
                 font-weight: 500;
                 a{
-                  color: #00095E;
+                  color: $bluetext;
                   font-family: "Josefin Sans",sans-serif;
                   font-size: 22px;
                   font-weight: 700;
@@ -88,19 +88,19 @@
               .price{
                 font-size: 22px;
                 font-weight: 700;
-                color: #7EA0FF;
+                color: $lightblue;
                 line-height: 1;
               }
             }
             p{
-              color: #00095E;
+              color: $bluetext;
               font-size: 14px;
               font-weight: 500;
               margin: 0;
               padding: 0;
               line-height: 1.4;
               a{
-                color: #7EA0FF;
+                color: $lightblue;
                 background: rgba(126,160,255,0.05);
                 font-size: 14px;
                 display: inline-block;
